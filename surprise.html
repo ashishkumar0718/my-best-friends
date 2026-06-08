@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Special Surprise ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#090909,#190014,#33001f);
+color:white;
+overflow-x:hidden;
+}
+
+/* Hero */
+
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+text-align:center;
+}
+
+.hero-card{
+max-width:900px;
+width:100%;
+padding:50px;
+border-radius:30px;
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(20px);
+box-shadow:0 0 40px rgba(255,0,100,.25);
+}
+
+.hero-card h1{
+font-size:3.5rem;
+color:#ff5d9e;
+text-shadow:0 0 20px #ff5d9e;
+}
+
+.hero-card p{
+margin-top:20px;
+line-height:2;
+color:#ffd4e6;
+}
+
+/* Panda */
+
+.panda{
+font-size:120px;
+animation:dance 1s infinite alternate;
+margin-bottom:20px;
+}
+
+@keyframes dance{
+from{
+transform:translateY(0) rotate(-5deg);
+}
+to{
+transform:translateY(-20px) rotate(5deg);
+}
+}
+
+/* Badge */
+
+.badge{
+display:inline-block;
+padding:15px 30px;
+background:#ff4d88;
+border-radius:50px;
+margin-top:25px;
+font-weight:bold;
+}
+
+/* Photos */
+
+.gallery{
+padding:100px 20px;
+}
+
+.gallery h2{
+text-align:center;
+margin-bottom:40px;
+color:#ff7aa8;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+max-width:1200px;
+margin:auto;
+}
+
+.gallery-grid img{
+width:100%;
+height:350px;
+object-fit:cover;
+border-radius:25px;
+transition:.4s;
+cursor:pointer;
+}
+
+.gallery-grid img:hover{
+transform:scale(1.05);
+}
+
+/* Notes */
+
+.notes{
+padding:50px 20px;
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.note{
+width:260px;
+padding:25px;
+border-radius:20px;
+font-weight:700;
+color:#111;
+animation:pop 1s ease;
+}
+
+.note:nth-child(1){background:#ffe082;}
+.note:nth-child(2){background:#90caf9;}
+.note:nth-child(3){background:#a5d6a7;}
+.note:nth-child(4){background:#f48fb1;}
+.note:nth-child(5){background:#ce93d8;}
+
+@keyframes pop{
+from{
+opacity:0;
+transform:scale(.5);
+}
+to{
+opacity:1;
+transform:scale(1);
+}
+}
+
+/* Letter */
+
+.letter{
+padding:100px 20px;
+display:flex;
+justify-content:center;
+}
+
+.letter-card{
+max-width:900px;
+width:100%;
+padding:40px;
+border-radius:25px;
+background:rgba(255,255,255,.05);
+line-height:2;
+backdrop-filter:blur(15px);
+}
+
+.letter-card h2{
+margin-bottom:20px;
+color:#ff7aa8;
+}
+
+/* Final */
+
+.final{
+padding:100px 20px;
+text-align:center;
+}
+
+.final h1{
+color:#ff7aa8;
+margin-bottom:20px;
+}
+
+.final p{
+max-width:800px;
+margin:auto;
+line-height:2;
+}
+
+/* Hearts */
+
+.hearts{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+overflow:hidden;
+z-index:-1;
+}
+
+.heart{
+position:absolute;
+font-size:20px;
+animation:float 8s linear forwards;
+}
+
+@keyframes float{
+0%{
+transform:translateY(100vh);
+opacity:1;
+}
+100%{
+transform:translateY(-100px);
+opacity:0;
+}
+}
+
+/* Button */
+
+.back{
+display:inline-block;
+margin-top:40px;
+padding:15px 30px;
+background:#ff4d88;
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-weight:bold;
+}
+
+@media(max-width:768px){
+
+.hero-card h1{
+font-size:2.3rem;
+}
+
+.panda{
+font-size:90px;
+}
+
+.gallery-grid img{
+height:280px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hearts"></div>
+
+<section class="hero">
+
+<div class="hero-card">
+
+<div class="panda">🐼</div>
+
+<h1>
+Atharv ❤️ Omji
+</h1>
+
+<p>
+
+6+ Years Of Friendship
+
+<br><br>
+
+School • Coaching • Gaming • Travel
+
+</p>
+
+<div class="badge">
+🏆 Friendship Forever
+</div>
+
+</div>
+
+</section>
+
+<section class="gallery">
+
+<h2>📸 Our Beautiful Memories ❤️</h2>
+
+<div class="gallery-grid">
+
+<img src="images/photo1.jpeg">
+
+<img src="images/photo2.jpeg">
+
+<img src="images/photo3.jpeg">
+
+<img src="images/photo4.jpeg">
+
+</div>
+
+</section>
+
+<section class="notes">
+
+<div class="note">
+🎮 Gaming Partners
+</div>
+
+<div class="note">
+🏫 School Legends
+</div>
+
+<div class="note">
+📚 Coaching Buddies
+</div>
+
+<div class="note">
+✈️ Travel Partners
+</div>
+
+<div class="note">
+❤️ Brothers From Another Mother
+</div>
+
+</section>
+
+<section class="letter">
+
+<div class="letter-card">
+
+<h2>💌 A Letter From Ashish</h2>
+
+<p>
+
+Atharv and Omji,
+
+These 6+ years have been unforgettable.
+
+From school days to coaching classes,
+from gaming sessions to amazing trips,
+every memory became special because of you.
+
+Some friends stay for a season,
+but some stay for life.
+
+Thank you for every laugh,
+every support,
+every crazy moment,
+and every adventure.
+
+You are not just friends.
+
+You are my brothers.
+
+No matter where life takes us,
+our friendship will always remain special.
+
+Happy Best Friend Day ❤️
+
+<br><br>
+
+— Ashish
+
+</p>
+
+</div>
+
+</section>
+
+<section class="final">
+
+<h1>
+❤️ Thank You ❤️
+</h1>
+
+<p>
+
+To Atharv and Omji,
+
+Thank you for every game,
+every joke,
+every memory,
+and every adventure.
+
+You are not just friends.
+
+You are family.
+
+No matter how much time passes,
+you will always be an important
+part of my life.
+
+</p>
+
+<a href="index.html" class="back">
+⬅ Back
+</a>
+
+</section>
+
+<script>
+
+// Hearts
+
+const hearts =
+document.querySelector('.hearts');
+
+function createHeart(){
+
+const heart =
+document.createElement('div');
+
+heart.classList.add('heart');
+
+heart.innerHTML='❤️';
+
+heart.style.left =
+Math.random()*100+'%';
+
+hearts.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},8000);
+
+}
+
+setInterval(createHeart,300);
+
+// Image Zoom
+
+document.querySelectorAll(
+'.gallery-grid img'
+).forEach(img=>{
+
+img.addEventListener(
+'click',
+()=>{
+
+const overlay =
+document.createElement('div');
+
+overlay.style.position='fixed';
+overlay.style.top='0';
+overlay.style.left='0';
+overlay.style.width='100%';
+overlay.style.height='100%';
+overlay.style.background='rgba(0,0,0,.9)';
+overlay.style.display='flex';
+overlay.style.alignItems='center';
+overlay.style.justifyContent='center';
+overlay.style.zIndex='99999';
+
+const image =
+document.createElement('img');
+
+image.src=img.src;
+
+image.style.maxWidth='90%';
+image.style.maxHeight='90%';
+image.style.borderRadius='20px';
+
+overlay.appendChild(image);
+
+overlay.onclick=()=>{
+overlay.remove();
+};
+
+document.body.appendChild(overlay);
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
